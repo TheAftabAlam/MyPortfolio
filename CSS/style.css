@@ -474,7 +474,7 @@ section#ProjectPage{
  }
  .hamberger{
    
-    position: absolute;
+    position: fixed;
     border: none;
     max-height: 1%;
     top: 40px;
@@ -565,13 +565,14 @@ section#ProjectPage{
        
     }
     .box{
-    
+  
      grid-template-columns: 1fr;
      grid-template-rows: auto;
      grid-template-areas:
-         "form "
+         "form"
          "info "
          "map ";
+        
     }
     .map{
      min-height: 300px;
