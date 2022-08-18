@@ -15,10 +15,12 @@
 </head>
 <body>
    <div class="site-main-wrraper">
+  <div class="mobile_head">
     <button class="hamberger">
-       <span> <ion-icon name="menu"></ion-icon></span>
-
-    </button>
+        <span> <ion-icon name="menu"></ion-icon></span>
+ 
+     </button>
+  </div>
     <div class="mobile-nav">
         <button class="times">
             <span> <ion-icon name="close"></ion-icon></span>
@@ -87,20 +89,18 @@
     <section id="aboutPage" class="about">
         <div class="container flex item-center justify-between">
             <div class="flex-1">
-                <img class="about-img" src="./images/mainPic.png" alt="">
+                <img class="about-img" src="./images/WithoutBackgroundIMG.png" alt="">
             </div>
             <div class="flex-1">
                 <h1>About<span> Me</span></h1>
                 <h3>Hello I'm <span class="skills">Aftab Alam</span></h3>
-                <p>Committed and goal-oriented B.tech graduate looking to pursue a
-                    career in the software engineering domain.
-                    Creative and diligent aspiring full-stack developer with a specialization in java backend.  
-                </p>
                 <p>
+                    Creative and diligent aspiring full-stack developer with a specialization in java backend.  
+                
                     Possess excellent
                     knowledge in Java, Spring Boot, Hibernate, MySQL as well as
-                    frontend technologies. 
-                    Self-believing and enthusiastic, with a keen interest in building and designing backend.
+                    frontend technologies. <br>
+                    Enthusiastic, with a keen interest in building and designing backend.
                     
 
                     Ability to learn things quickly and capable
@@ -132,9 +132,7 @@
             <div class="skill">
                 <img src="./images/mysql.png" alt="">
             </div>
-            <div class="skill">
-                <img src="./images/git-logo.png" alt="">
-            </div>
+           
             <div class="skill">
                 <img src="./images/javaScript.webp" alt="">
             </div>
@@ -143,6 +141,9 @@
             </div>
             <div class="skill">
                 <img src="./images/css3 logo.png" alt="">
+            </div>
+            <div class="skill">
+                <img src="./images/git-logo.png" alt="">
             </div>
         </div>
     </section>
@@ -167,7 +168,7 @@
                 
                 <div class="button">
                     <button  onclick="window.open('https://luxury-douhua-2f73cb.netlify.app/','_blank')"  class="btn btn-primary">Netlify Link</button>
-                    <button  onclick="window.open('https://github.com/TheAftabAlam/CricBuzz','_blank')" class="btn btn-primary">Code</button>
+                    <button  onclick="window.open('https://github.com/VijaySingh8650/cricbuzz','_blank')" class="btn btn-primary">Code</button>
                 </div>
 
             </div>
@@ -180,7 +181,7 @@
                 </div>
                 <div class="button">
                     <button onclick="window.open('https://preeminent-concha-2ff4de.netlify.app/','_blank')" class="btn btn-primary">Netlify Link</button>
-                    <button onclick="window.open('https://github.com/TheAftabAlam/Zappos.com','_blank')" class="btn btn-primary">Code</button>
+                    <button onclick="window.open('https://github.com/gitsid1611/Zappos-Project','_blank')" class="btn btn-primary">Code</button>
                 </div>
 
 
@@ -213,35 +214,35 @@
             <div class="box">
                 <div class="contact form">
                    <h3> Send me a Message</h3>
-                   <form>
+                   <form onsubmit="sendEmail(); reset(); return false;" id="form">
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox">
                                 <span>First Name</span>
-                                <input type="text" placeholder="Enter First Name">
+                                <input id="f_name" type="text" placeholder="Enter First Name">
                             </div>
                             <div class="inputBox">
                                 <span>Last Name</span>
-                                <input type="text" placeholder="Enter Second Name">
+                                <input id="l_name" type="text" placeholder="Enter Second Name">
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputBox">
                                 <span>Email Address</span>
-                                <input type="email" placeholder="Enter Gmail Here">
+                                <input id="email" type="email" placeholder="Enter Gmail Here">
                             </div>
                             <div class="inputBox">
                                 <span>Mobile</span>
                               
-                                <input type="text" placeholder="Enter Mobile Number">
+                                <input id="phone" type="text" placeholder="Enter Mobile Number">
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputBox">
                                 <span>Message</span>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Message Here..."></textarea>
+                                <textarea name="" id="msg" cols="30" rows="10" placeholder="Write Your Message Here..."></textarea>
                               
                             </div>
                         </div>
@@ -309,6 +310,8 @@
    </div>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 </body>
 </html>
 <script src="./JS/script.js"></script>
