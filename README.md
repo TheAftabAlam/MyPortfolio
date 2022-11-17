@@ -11,7 +11,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://aftabalam.netlify.app)
+- http://localhost:8880/swagger-ui/#/
 
 
 
